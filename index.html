@@ -2,69 +2,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Support Me</title>
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; }
-    body { font-family: Arial, sans-serif; background: #111; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Me</title>
 
-    .background {
-      position: fixed;
-      inset: -18px;
-      background: url('background.jpg') center / cover no-repeat;
-      filter: blur(9px);
-      transform: scale(1.04);
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.42);
-    }
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 
-    main {
-      position: relative;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: #111;
+  overflow: hidden;
+}
 
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: min(320px, 85vw);
-      padding: 20px 32px;
-      border-radius: 999px;
-      background: white;
-      color: #151515;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 20px;
-      box-shadow: 0 8px 32px rgba(0,0,0,.25);
-      transition: transform .2s;
-    }
+.background {
+  position: fixed;
+  inset: -15px;
+  background-image: url('BlueCamera-29DC6709-11C5-4664-832F-AD64273D0151-Original.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(9px);
+}
 
-    a:hover { transform: scale(1.04); }
-    a:focus-visible {
-      outline: 3px solid white;
-      outline-offset: 4px;
-    }
-  </style>
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+main {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.support-button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 50px;
+  background: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.support-button:hover {
+  transform: scale(1.04);
+}
+
+.support-button:active {
+  transform: scale(0.96);
+}
+</style>
 </head>
+
 <body>
-  <div class="background"></div>
-  <div class="overlay"></div>
-  <main>
-    <a href="https://tinyurl.com/3rdx9f8j"
-       target="_blank"
-       rel="noopener noreferrer">
-      Support Me
-    </a>
-  </main>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<main>
+  <a class="support-button"
+     href="https://tinyurl.com/3rdx9f8j">
+    Support Me
+  </a>
+</main>
+
 </body>
 </html>
